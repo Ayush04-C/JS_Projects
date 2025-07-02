@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tip calaculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="input-section">
+            <div class="form-control">
+                <label for="bill"> Bill</label>
+                <input type="number" class="bill-input" id="bill" placeholder="0" min="0">
+            </div>
+            
+            <div class="form-control">
+
+                <p>Select tip%</p>
+
+                <div class="tip-buttons-container">
+                    <button type="button" class="tip-percent-btn" data-tip="5"> 5% </button>
+                    <button type="button" class="tip-percent-btn" data-tip="10"> 10% </button>
+                    <button type="button" class="tip-percent-btn" data-tip="15"> 15% </button>
+                    <button type="button" class="tip-percent-btn" data-tip="20"> 20% </button>
+                    <button type="button" class="tip-percent-btn" data-tip="25"> 25% </button>
+
+                    <input type="number" id="custom-tip" class="input-section tip-custom-input" placeholder="Custom" min="0">
+                </div>
+            </div>
+            <div class="form-control">
+                 <label for="num-people">No. of people</label>
+                 <input type="number" class="num-people-input" id="num-people" placeholder="1" min="1">
+            </div>
+        </div>
+
+        <div class="output-section">
+            <div class="result-line">
+                <div class="result-label">
+                    <p>Tip Amt</p>
+                    <span>/ person</span>
+                </div>
+
+                <div class="result-value">
+                    <span id ="tip-amount-display" class="amount-display" aria-live="polite"> $0.00 </span>
+                </div>
+            </div>
+      
+            <div class="result-line">
+                <div class="result-label">
+                    <p>Total </p>
+                    <span>/ person</span>
+                </div>
+
+                <div class="result-value">
+                    <span id ="total-amount-display" class="amount-display" aria-live="polite"> $0.00 </span>
+                </div>
+            </div>
+
+            <button type="button" id="reset-button" class="reset-btn">RESET</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

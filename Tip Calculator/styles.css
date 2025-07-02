@@ -1,0 +1,244 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('1311994.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.input-section-group input.error{
+    border-color: red;
+    border-width: 2px;
+}
+
+body {
+    /* background: linear-gradient(90deg, #27ceda 0%, #dfa034 100%); */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    color: #4B5A6A;
+    line-height: 1.6;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.calculator-container{
+    background: linear-gradient(90deg, #27ceda 0%, #dfa034 100%);
+    padding: 32px;
+    border-radius: 15px;
+    opacity: 1;
+    
+
+    max-width: 800px;
+    width: 90%;
+
+    margin: 50px auto;
+
+    box-shadow: 0 15px 30px rgba(0, 71, 75, 0.15);
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.input-section,
+.output-section{
+    flex:1;
+}
+
+.input-section {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    background: linear-gradient(90deg,  #27ceda 0%, #dfa034 100%);
+    filter: drop-shadow(0 2px 4px rgba(7, 1, 1, 0.1));
+}
+
+label,
+.form-control > p {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.tip-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.tip-percent-btn {
+    padding: 10px;
+    /* margin: 1px 0px 1px 0px; */
+    background: linear-gradient(90deg,  #0ca1ac 0%, #ae7b23 100%);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.tip-percent-btn:hover{
+    background-color: #27ceda;
+    color: black;
+}
+.tip-percent-btn:active{
+     background-color: #9FE8DF; 
+     color: #00474B;
+}
+
+.output-section {
+    background: linear-gradient(90deg, #67cb8d 0%, #d1913e 100%);
+    padding: 30px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    filter: drop-shadow(0 2px 4px rgba(7, 1, 1, 0.1));
+}
+/* .result-line{
+    margin-top: 25px;
+} */
+/* .output-section .result-line:last-of-type {
+    margin-top: 30px;
+} */
+.result-label p {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+.result-label span {
+    color: black;
+    font-size: 0.8rem;
+    display: block;
+}
+.result-value span {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 700;
+    /* display: block; */
+    text-align: right;
+}
+.reset-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+
+    background: linear-gradient(90deg,  #0ca1ac 0%, #ae7b23 100%);
+    color: black;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.reset-btn:hover {
+    background-color: #9FE8DF;  
+    color: #00474B;             
+}
+.reset-btn:active {
+    background-color: #00474B;  
+    color: #9FE8DF;             
+}
+
+.bill-input {
+    border-radius: 4px;
+    background: linear-gradient(90deg,  #0ca1ac 0%, #ae7b23 100%);
+    padding: 8px;
+    color: black;
+    /* margin: 0px 8px 0px 16px; */
+}
+.num-people-input {
+    border-radius: 4px;
+    background: linear-gradient(90deg,  #0ca1ac 0%, #ae7b23 100%);
+    padding: 8px;
+    color: black;
+    /* margin: 0px 8px 0px 16px; */
+}
+
+@media screen and (max-width : 600px){
+    .calculator-container{
+        flex-direction: column;
+
+        align-items: stretch;
+        padding: 10px 25px;
+    }
+    .input-section{
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 0px;
+        filter: drop-shadow(0 2px 4px rgba(7, 1, 1, 0.1));
+    }
+    .output-section{
+        width: 100%;
+        padding: 20px 15px;
+        margin-left: 0px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        filter: drop-shadow(0 2px 4px rgba(7, 1, 1, 0.1));
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input[type="number"],
+    .tip-percent-btn,
+    #reset-button{
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .result-value, 
+    #tip-amount-display,
+    #total-amount-display{
+        font-size: 1.5rem;
+    }
+
+    .input-group{
+        margin-bottom: 15px;
+    }
+
+    .tip-percent-btn{
+        margin: 5px;
+    }
+
+    .output-label {
+        font-size: 0.85rem;
+    }
+    .result-label p {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 15px;
+    }
+}
