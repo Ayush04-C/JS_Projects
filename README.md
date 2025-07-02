@@ -20,3 +20,6 @@ This repo serves as:
 -> A handy reference for frequently used JS patterns
 
 -> A starting point for anyone beginning their web development journey
+
+
+One of my fav Proj is Tip Calculator
